@@ -1,1 +1,218 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/fonts/Roboto-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/fonts/Roboto-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/fonts/Roboto-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1: #ffffff;
+  --color-2: #000000;
+  --color-3: #F6F7F8;
+  --color-4: #e6c519;
+  --color-5: #ffdc26;
+  --color-6: #bfbfbf;
+  --color-7: #A1A1A1;
+  --color-8: #d4d4d4;
+  --color-9: #eeeeee;
+  --color-10: #737373;
+  --color-11: #f7f7f7;
+  --color-12: #e2e2e2;
+  --color-13: #e7e7e730;;
+  --color-14: #ff4b00;
+
+
+  --shadow-1: 0 0 0.8rem 0 rgb(96 125 139 / 56%);
+  --shadow-2: 0 0 0.8rem 0 rgb(255 61 0 / 32%);
+  --shadow-3: 0 0 2rem 0 rgb(168 168 168 / 95%);
+
+  --transform4: background-color 0.3s;
+
+  --rotateZ: rotateZ(45deg);
+
+  --border-1: 0.11rem solid #CDCDCD;
+}
+
+html {
+  font-family: 'Roboto', Sans-Serif, Arial, serif;
+  font-size: 62.5%;
+  color: var(--color-2);
+  background-color: var(--color-1);
+  /*height: 100%;*/
+  /* Если установить это значение, то header со свойством position: sticky;
+    не будет опускаться до конца страницы. А если включить этот параметр, то filler будет замечательно отрабатывать.
+    filler нужен для того, чтобы прижать footer к низу, он служит как свойство flex: 1;*/
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+/*Общие*/
+.s-wh {
+  width: 2.3rem;
+  height: 2.3rem;
+}
+
+.t-b {
+  font-weight: bold;
+}
+
+.f-s10 {
+  font-size: 1rem;
+}
+
+.f-s16 {
+  font-size: 1.6rem;
+}
+
+.btn-s-1 {
+  padding: 0.6rem 1.4rem 0.6rem 1.4rem;
+}
+
+.btn-s-2 {
+  margin: 1.1rem 0.7rem 0.3rem 1rem;
+}
+
+.btn-b {
+  display: flex;
+  height: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0 0 1rem 1rem;
+  margin-top: 1rem;
+  transition: var(--transform4) ease-in-out;
+  background-color: var(--color-5);
+
+  font-size: 2rem;
+
+  user-select: none;
+  -webkit-user-select: none; /* Для старых браузеров WebKit (Safari, Android) */
+  -moz-user-select: none; /* Для старых версий Firefox */
+  -ms-user-select: none; /* Для Internet Explorer/Edge */
+}
+
+.btn-b:hover {
+  background-color: var(--color-4);
+}
+
+.fgt path {
+  fill: var(--color-7);
+  transition: fill 0.3s ease-in-out;
+}
+
+.glow:active {
+  box-shadow: var(--shadow-2);
+}
+
+.c-el {
+  background-color: var(--color-3);
+}
+
+.c-ew {
+  background-color: var(--color-9);
+}
+
+.scs path {
+  fill: var(--color-2);
+}
+
+.marg4r {
+  margin-right: 4rem;
+}
+
+.marg4l {
+  margin-left: 4rem;
+}
+
+.wrap-bn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrap-bf {
+  display: flex;
+}
+
+.svg1 {
+  width: 3rem;
+  height: 3rem;
+  fill: var(--color-10);
+}
+
+.d-cont {
+  display: contents;
+}
+
+
+.opa1 {
+  opacity: 0;
+}
+
+.opa2 {
+  opacity: 1;
+}
+
+.border-bl {
+  border-bottom-left-radius: 1rem;
+}
+.border-br {
+  border-bottom-right-radius: 1rem;
+}
+.border-tl {
+  border-top-left-radius: 1rem;
+}
+.border-tr {
+  border-top-right-radius: 1rem;
+}
+
+
+.z-index {
+  z-index: 1;
+}
+.z-index2 {
+  z-index: 2;
+}
+
+.d-el {
+  fill: var(--color-14);
+}
+/*Общие*/

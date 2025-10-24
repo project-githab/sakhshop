@@ -1,0 +1,186 @@
+.point-1 {
+  display: flex;
+}
+
+.point-2 {
+  display: none;
+}
+
+.point-3 {
+  display: none;
+}
+
+.point-4 {
+  display: none;
+}
+
+.pagination {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.b-pagination {
+  display: flex;
+  box-shadow: var(--shadow-3);
+  border-radius: 1rem;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.number:hover {
+  background-color: var(--color-13);
+  box-shadow: var(--shadow-2);
+}
+
+.number-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+}
+
+
+.back {
+  display: flex;
+  width: 9.5rem;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.back:hover {
+  background-color: var(--color-13);
+  box-shadow: var(--shadow-2);
+}
+
+.back-svg {
+  margin-top: 0.5rem;
+}
+
+.forward {
+  display: flex;
+  width: 9.5rem;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  cursor: pointer;
+}
+
+.forward:hover {
+  background-color: var(--color-13);
+  box-shadow: var(--shadow-2);
+}
+
+.forward-svg {
+  margin-top: 0.5rem;
+}
+
+
+/*≥302px*/
+@media (min-width: 18.875em) {
+  .point-1 {
+    display: none;
+  }
+
+  .point-2 {
+    display: flex;
+  }
+
+
+}
+
+/*≥576px*/
+@media (min-width: 36em) {
+
+  .point-2 {
+    display: none;
+  }
+
+  .point-3 {
+    display: flex;
+  }
+
+  .pagination {
+    font-size: 2rem;
+  }
+
+  .number {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .forward {
+    width: 13.5rem;
+    height: 5rem;
+  }
+
+  .forward-svg {
+    margin-top: 0.7rem;
+  }
+
+  .back {
+    width: 12rem;
+    height: 5rem;
+  }
+
+  .back-svg {
+    margin-top: 0.7rem;
+  }
+
+  .number-active {
+    width: 5rem;
+    height: 5rem;
+  }
+
+}
+
+/*≥768px*/
+@media (min-width: 48em) {
+  .forward {
+    width: 13rem;
+    height: 5rem;
+  }
+
+  .back {
+    width: 12rem;
+    height: 5rem;
+  }
+
+
+  .forward-svg {
+    margin-top: 0.7rem;
+    margin-left: 1rem;
+  }
+
+  .back-svg {
+    margin-top: 0.7rem;
+    margin-right: 1rem;
+  }
+
+  .point-3 {
+    display: none;
+  }
+
+  .point-4 {
+    display: flex;
+  }
+}

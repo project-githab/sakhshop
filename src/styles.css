@@ -215,4 +215,8 @@ h1 {
 .d-el {
   fill: var(--color-14);
 }
+
+.filler {
+  flex: 1;
+}
 /*Общие*/

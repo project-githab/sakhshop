@@ -5,7 +5,9 @@ const routes: Routes = [
 
   {
     path: '', loadChildren: () => import('./wc-home/wc-home-module').then(m => m.WcHomeModule)
-  }
+  },
+
+  { path: 'cart', loadChildren: () => import('./wc-cart/wc-cart-module').then(m => m.WcCartModule) }
 
 ];
 

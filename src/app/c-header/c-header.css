@@ -230,7 +230,7 @@
   display: flex;
   align-content: center;
   background-color: var(--color-5);
-  border-radius: 0 25px 25px 0;
+  border-radius: 0 2.5rem 2.5rem 0;
   width: fit-content;
   cursor: pointer;
   transition: var(--transform4) ease-in-out;
@@ -376,11 +376,6 @@
   .b-head {
     padding-bottom: 0;
   }
-
-}
-
-/*768px*/
-@media (min-width: 48em) {
 
 }
 

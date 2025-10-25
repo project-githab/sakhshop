@@ -7,6 +7,7 @@ import {provideHttpClient, withFetch} from '@angular/common/http';
 import {CHeader} from './c-header/c-header';
 import {CFooter} from './c-footer/c-footer';
 import {CPagination} from './c-pagination/c-pagination';
+import { PluralizePipe } from './_pipe/pluralize/pluralize-pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {CPagination} from './c-pagination/c-pagination';
     AppRoutingModule,
     CHeader,
     CFooter,
-    CPagination
+    CPagination,
+    PluralizePipe
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
@@ -26,6 +28,8 @@ import {CPagination} from './c-pagination/c-pagination';
     provideHttpClient(withFetch()),
   ],
   exports: [
+
+    PluralizePipe
   ],
   bootstrap: [App]
 })

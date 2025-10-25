@@ -6,6 +6,7 @@ import { WcCart } from './wc-cart';
 import { Cart } from './cart/cart';
 import {CHeader} from '../c-header/c-header';
 import {CFooter} from '../c-footer/c-footer';
+import {PluralizePipe} from '../_pipe/pluralize/pluralize-pipe';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import {CFooter} from '../c-footer/c-footer';
     CommonModule,
     WcCartRoutingModule,
     CHeader,
-    CFooter
+    CFooter,
+    PluralizePipe
   ]
 })
 export class WcCartModule { }

@@ -2,7 +2,7 @@
 .head {
   /*background-color: #379678;*/
   display: flex;
-  padding: 25px 5px 25px 5px;
+  padding: 2.5rem 0.5rem 2.5rem 0.5rem;
   gap: 2rem;
   flex-direction: column;
 }
@@ -43,7 +43,7 @@
   width: 100%;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 2rem;
   /*background-color: brown;*/
 }
 
@@ -53,7 +53,7 @@
 
   display: flex;
   flex-direction: column;
-  margin: 0 10px 10px 10px;
+  margin: 0 1rem 1rem 1rem;
   box-shadow: 0 0 0.8rem 0 rgb(191 191 191 / 50%);
   border-radius: 1rem 1rem 0 0;
 
@@ -105,7 +105,7 @@
   white-space: normal;
   line-height: 1;
   min-height: 8.3rem;
-  margin: 5px 5px 5px 5px;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .action {
@@ -115,7 +115,7 @@
 .up {
   display: flex;
   justify-content: space-between;
-  height: 43px;
+  height: 4.3rem;
 }
 
 .plus {
@@ -124,16 +124,15 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 4rem;
 }
 
 .qty {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 10px 0 10px;
-  font-size: 18px;
-  background-color: #fdf7e3;
+  padding: 0 1rem 0 1rem;
+  font-size: 1.8rem;
 }
 
 .minus {
@@ -143,21 +142,23 @@
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 4rem;
 }
 
 .pd {
   display: flex;
-  justify-content: space-between;
-  padding: 15px 5px 0 5px;
-  /*background-color: #e3f1fd;*/
-  background-color: #fdf7e3;
+  padding: 0 0 0 0.5rem;
+  /*background-color: #fdf7e3;*/
+  height: 4.3rem;
+  align-items: center;
 }
 
 
 .price {
-  font-size: 10px;
+  padding: 0.5rem 0 0 0;
+  font-size: 1rem;
 }
+
 .symbol {
   top: -0.7rem;
   position: relative;
@@ -178,12 +179,24 @@
   margin-left: -0.3rem;
 }
 
+.delete {
+  display: flex;
+  /*background-color: var(--color-11);*/
+  /*background-color: aqua;*/
+  height: 100%;
+  align-items: center;
+  padding: 0 0.5rem 0 0.5rem;
+}
 
 /* ≥270px */
 @media (min-width: 16.875em) {
 
+  .delete {
+  padding: 0 2rem 0 2rem;
+}
+
   .head {
-    padding: 30px 15px 30px 15px;
+    padding: 3rem 1.5rem 3rem 1.5rem;
   }
 
   .count {
@@ -202,5 +215,42 @@
     width: 2.6rem;
     height: 2.6rem;
   }
+
+  .text3 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .base-price {
+    font-size: 2rem;
+  }
+
+  .price {
+    font-size: 1.2rem;
+  }
+
+  .qty {
+    font-size: 2rem;
+  }
+}
+
+
+/* ≥302px */
+@media (min-width: 18.875em) {
+
+  .cart {
+    margin: 0 2rem 2rem 2rem;
+  }
+
+  .text3 {
+    margin: 1rem 1rem 1rem 1rem;
+  }
+
+}
+
+/* ≥576px */
+@media (min-width: 36em) {
+
+
 
 }

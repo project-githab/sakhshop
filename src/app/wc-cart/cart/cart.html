@@ -2,37 +2,136 @@
 
 <div class="head">
   <div class="name">
-    <div class="text">В корзине</div>
-    <div class="count">{{itemCount}} {{ itemCount | pluralize: 'товар': 'товара': 'товаров' }}</div>
+    <div class="text1">В корзине:</div>
+    <div class="count">{{ itemCount }} {{ itemCount | pluralize: 'товар': 'товара': 'товаров' }}</div>
   </div>
   <div class="select-all">
-    Выбрать всё
+
+
+    <div class="check">
+
+      <!--checkbox-->
+      <div class="checkbox borderF"
+           [ngClass]="{'checkbox-checked': isCheckbox}"
+           (click)="clickCheckbox()"
+           (keydown)="handleKeydown($event)"
+           tabindex="0"
+           role="checkbox"
+           [attr.aria-checked]="isCheckbox">
+
+        @if (isCheckbox) {
+          <svg xmlns="http://www.w3.org/2000/svg"
+               height="20px"
+               viewBox="0 -960 960 960"
+               width="20px">
+            <path d="M389-227 154-461l91-92 144 145 327-326 91 90-418 417Z"/>
+          </svg>
+        }
+      </div>
+      <!--checkbox-->
+
+    </div>
+
+
+    <div class="text2">Выбрать всё</div>
   </div>
 </div>
 
 <div class="goods-cart">
 
-  <div class="b-goods">
-
-
-    <img src="/img/img1.png" alt="product image">
-
-
-  </div>
-
-</div>
-
-<div class="goods-cart">
 
   <div class="b-goods">
+    <div class="b-check">
+
+      <!--checkbox-->
+      <div class="checkbox borderF"
+           [ngClass]="{'checkbox-checked': isCheckbox}"
+           (click)="clickCheckbox()"
+           (keydown)="handleKeydown($event)"
+           tabindex="0"
+           role="checkbox"
+           [attr.aria-checked]="isCheckbox">
+
+        @if (isCheckbox) {
+          <svg xmlns="http://www.w3.org/2000/svg"
+               height="20px"
+               viewBox="0 -960 960 960"
+               width="20px">
+            <path d="M389-227 154-461l91-92 144 145 327-326 91 90-418 417Z"/>
+          </svg>
+        }
+      </div>
+      <!--checkbox-->
+
+    </div>
     <img src="/img/img2.png" alt="product image">
   </div>
 
+
+</div>
+
+<div class="goods-cart">
+
+
+  <div class="b-goods">
+
+    <div class="b-check">
+
+      <!--checkbox-->
+      <div class="checkbox borderF"
+           [ngClass]="{'checkbox-checked': isCheckbox}"
+           (click)="clickCheckbox()"
+           (keydown)="handleKeydown($event)"
+           tabindex="0"
+           role="checkbox"
+           [attr.aria-checked]="isCheckbox">
+
+        @if (isCheckbox) {
+          <svg xmlns="http://www.w3.org/2000/svg"
+               height="20px"
+               viewBox="0 -960 960 960"
+               width="20px">
+            <path d="M389-227 154-461l91-92 144 145 327-326 91 90-418 417Z"/>
+          </svg>
+        }
+      </div>
+      <!--checkbox-->
+
+    </div>
+
+    <img src="/img/img1.png" alt="product image">
+  </div>
+
 </div>
 
 <div class="goods-cart">
 
   <div class="b-goods">
+
+    <div class="b-check">
+
+      <!--checkbox-->
+      <div class="checkbox borderF"
+           [ngClass]="{'checkbox-checked': isCheckbox}"
+           (click)="clickCheckbox()"
+           (keydown)="handleKeydown($event)"
+           tabindex="0"
+           role="checkbox"
+           [attr.aria-checked]="isCheckbox">
+
+        @if (isCheckbox) {
+          <svg xmlns="http://www.w3.org/2000/svg"
+               height="20px"
+               viewBox="0 -960 960 960"
+               width="20px">
+            <path d="M389-227 154-461l91-92 144 145 327-326 91 90-418 417Z"/>
+          </svg>
+        }
+      </div>
+      <!--checkbox-->
+
+    </div>
+
     <img src="/img/img3.png" alt="product image">
   </div>
 
@@ -41,6 +140,31 @@
 <div class="goods-cart">
 
   <div class="b-goods">
+
+    <div class="b-check">
+
+      <!--checkbox-->
+      <div class="checkbox borderF"
+           [ngClass]="{'checkbox-checked': isCheckbox}"
+           (click)="clickCheckbox()"
+           (keydown)="handleKeydown($event)"
+           tabindex="0"
+           role="checkbox"
+           [attr.aria-checked]="isCheckbox">
+
+        @if (isCheckbox) {
+          <svg xmlns="http://www.w3.org/2000/svg"
+               height="20px"
+               viewBox="0 -960 960 960"
+               width="20px">
+            <path d="M389-227 154-461l91-92 144 145 327-326 91 90-418 417Z"/>
+          </svg>
+        }
+      </div>
+      <!--checkbox-->
+
+    </div>
+
     <img src="/img/img4.jpg" alt="product image">
   </div>
 
@@ -49,6 +173,54 @@
 <div class="goods-cart">
 
   <div class="b-goods">
+
+    <div class="b-check">
+
+      <!--checkbox-->
+      <div class="checkbox borderF"
+           [ngClass]="{'checkbox-checked': isCheckbox}"
+           (click)="clickCheckbox()"
+           (keydown)="handleKeydown($event)"
+           tabindex="0"
+           role="checkbox"
+           [attr.aria-checked]="isCheckbox">
+
+        @if (isCheckbox) {
+          <svg xmlns="http://www.w3.org/2000/svg"
+               height="20px"
+               viewBox="0 -960 960 960"
+               width="20px">
+            <path d="M389-227 154-461l91-92 144 145 327-326 91 90-418 417Z"/>
+          </svg>
+        }
+      </div>
+      <!--checkbox-->
+
+    </div>
+    <div class="b-check">
+
+      <!--checkbox-->
+      <div class="checkbox borderF"
+           [ngClass]="{'checkbox-checked': isCheckbox}"
+           (click)="clickCheckbox()"
+           (keydown)="handleKeydown($event)"
+           tabindex="0"
+           role="checkbox"
+           [attr.aria-checked]="isCheckbox">
+
+        @if (isCheckbox) {
+          <svg xmlns="http://www.w3.org/2000/svg"
+               height="20px"
+               viewBox="0 -960 960 960"
+               width="20px">
+            <path d="M389-227 154-461l91-92 144 145 327-326 91 90-418 417Z"/>
+          </svg>
+        }
+      </div>
+      <!--checkbox-->
+
+    </div>
+
     <img src="/img/img5.png" alt="product image">
   </div>
 

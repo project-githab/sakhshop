@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-cart',
@@ -8,6 +8,23 @@ import { Component } from '@angular/core';
 })
 export class Cart {
 
-  itemCount: number = 25
+  itemCount: number = 2579
+
+
+  // checkbox----------
+  isCheckbox = false
+
+  clickCheckbox() {
+    this.isCheckbox = !this.isCheckbox;
+  }
+
+  handleKeydown(event: KeyboardEvent) {
+    if (event.key === ' ') {
+      event.preventDefault();
+      this.clickCheckbox();
+    }
+  }
+
+  // checkbox----------
 
 }

@@ -219,4 +219,44 @@ h1 {
 .filler {
   flex: 1;
 }
+
+
+/*checkbox*/
+
+.checkbox {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.6rem;
+  border: 0.1rem solid #ff9b00;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  background-color: #f1f1f1;
+
+  /* ОБЪЕДИНЕННЫЙ TRANSITION: Включаем все свойства */
+  transition: background-color 0.3s ease-in-out, /* Для :hover */ border-color 0.3s ease-in-out, /* Для .checkbox-checked */ transform 0.3s ease-in-out, /* Для :focus (если transform используется) */ box-shadow 0.3s ease-in-out; /* Для :focus */
+}
+
+.checkbox:hover {
+  background-color: #E7E7E7;
+}
+
+.checkbox-checked {
+  background-color: #FFDC26;
+  border-color: #FFDC26; /* Теперь будет плавно меняться */
+}
+
+.checkbox-checked:hover {
+  background-color: #FFDC26;
+  border-color: #FFDC26;
+}
+
+/*checkbox*/
+
+
+.borderF:focus {
+  box-shadow: 0 0 0 2px rgba(255, 155, 0, 0.5);
+}
 /*Общие*/

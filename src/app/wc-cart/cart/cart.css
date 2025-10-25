@@ -61,6 +61,10 @@
 
 }
 
+.desktop {
+  display: contents;
+}
+
 .b-goods {
   position: relative;
   display: flex;
@@ -192,8 +196,8 @@
 @media (min-width: 16.875em) {
 
   .delete {
-  padding: 0 2rem 0 2rem;
-}
+    padding: 0 2rem 0 2rem;
+  }
 
   .head {
     padding: 3rem 1.5rem 3rem 1.5rem;
@@ -251,6 +255,19 @@
 /* ≥576px */
 @media (min-width: 36em) {
 
+  .cart {
+    /*flex-direction: row;*/
+  }
 
+  /*.desktop {*/
+  /*  display: flex;*/
+  /*  flex-direction: row;*/
+  /*}*/
+
+  /*.b-goods {*/
+  /*  flex-basis: 200rem; !* Установите желаемый базовый размер (например, 18rem) *!*/
+  /*  flex-grow: 0;      !* Не позволяем ему растягиваться больше базового размера *!*/
+  /*  flex-shrink: 1;    !* Разрешаем сжиматься, если не хватает места *!*/
+  /*}*/
 
 }

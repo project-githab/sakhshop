@@ -12,6 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 1.4rem
 }
 
 .text1 {
@@ -19,7 +20,7 @@
 }
 
 .count {
-  font-size: 1.4rem;
+  display: block;
 }
 
 .select-all {
@@ -211,8 +212,13 @@
   /*.b-icon {*/
   /*  padding: 0 1rem 0 1rem;*/
   /*}*/
+
+  .name {
+    font-size: 1.6rem;
+  }
+
   .head {
-    padding: 3rem 1.5rem 3rem 1.5rem;
+    padding: 3rem 2.5rem 3rem 2.5rem;
   }
 
   .count {
@@ -254,6 +260,10 @@
 /* ≥302px */
 @media (min-width: 18.875em) {
 
+  .name {
+    font-size: 1.8rem;
+  }
+
   .all-b-icon {
     /*justify-content: space-between;*/
     justify-content: flex-end;
@@ -278,6 +288,12 @@
 
 /* ≥576px */
 @media (min-width: 36em) {
+
+
+  .name {
+    font-size: 2rem;
+  }
+
 
   .base-price {
     font-size: 2.5rem;
@@ -356,6 +372,10 @@
 
 /* ≥992px */
 @media (min-width: 62em) {
+
+  .name {
+    font-size: 2.5rem;
+  }
 
   .goods-cart {
     max-width: 76.7rem;

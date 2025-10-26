@@ -61,7 +61,7 @@
 
 }
 
-.desktop {
+.orientation {
   display: contents;
 }
 
@@ -75,6 +75,7 @@
   overflow: hidden;
   align-items: center;
   justify-content: center;
+  background-color: bisque;
   /*background-color: #2a63a5;*/
 }
 
@@ -94,7 +95,7 @@
 
 .b-description {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
 }
 
@@ -108,18 +109,22 @@
   overflow: hidden;
   white-space: normal;
   line-height: 1;
-  min-height: 8.3rem;
+  min-height: 8.1rem;
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
-.action {
-  /*background-color: #379678;*/
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: contents;
 }
 
 .up {
   display: flex;
   justify-content: space-between;
-  height: 4.3rem;
+  height: 4rem;
 }
 
 .plus {
@@ -153,13 +158,15 @@
   display: flex;
   padding: 0 0 0 0.5rem;
   /*background-color: #fdf7e3;*/
-  height: 4.3rem;
+  height: 9rem;
   align-items: center;
+  flex-direction: column;
+  gap: 15px;
 }
 
 
 .price {
-  padding: 0.5rem 0 0 0;
+  padding: 15px 0 0 0;
   font-size: 1rem;
 }
 
@@ -183,7 +190,13 @@
   margin-left: -0.3rem;
 }
 
-.delete {
+.all-b-icon {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.b-icon {
   display: flex;
   /*background-color: var(--color-11);*/
   /*background-color: aqua;*/
@@ -195,10 +208,9 @@
 /* ≥270px */
 @media (min-width: 16.875em) {
 
-  .delete {
-    padding: 0 2rem 0 2rem;
-  }
-
+  /*.b-icon {*/
+  /*  padding: 0 1rem 0 1rem;*/
+  /*}*/
   .head {
     padding: 3rem 1.5rem 3rem 1.5rem;
   }
@@ -254,20 +266,70 @@
 
 /* ≥576px */
 @media (min-width: 36em) {
-
-  .cart {
-    /*flex-direction: row;*/
+  .orientation {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
   }
 
-  /*.desktop {*/
-  /*  display: flex;*/
-  /*  flex-direction: row;*/
-  /*}*/
+  .b-goods {
+    width: 30%; /* ← увеличили немного от 40% */
+    flex: 0 0 30%; /* ← фиксируем, чтобы не “плавало” */
+  }
 
-  /*.b-goods {*/
-  /*  flex-basis: 200rem; !* Установите желаемый базовый размер (например, 18rem) *!*/
-  /*  flex-grow: 0;      !* Не позволяем ему растягиваться больше базового размера *!*/
-  /*  flex-shrink: 1;    !* Разрешаем сжиматься, если не хватает места *!*/
-  /*}*/
+  .b-description {
+    width: 70%;
+    flex: 0 0 70%;
+  }
+
+
+  .text3 {
+    -webkit-line-clamp: 6;
+  }
+
 
 }
+
+/* ≥768px */
+@media (min-width: 48em) {
+
+  .b-goods {
+    max-width: 218px;
+  }
+
+  .plus {
+    width: 40px;
+    margin: 0 0 0 10px;
+  }
+
+  .minus {
+    width: 40px;
+  }
+
+  .b-description {
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  .all-b-icon {
+    width: 150px;
+  }
+
+  .desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .pd {
+    height: 0;
+    flex-direction: row;
+  }
+
+}
+
+

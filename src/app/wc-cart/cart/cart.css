@@ -109,7 +109,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   white-space: normal;
-  line-height: 1rem;
+  line-height: 2rem;
   min-height: 8.1rem;
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }

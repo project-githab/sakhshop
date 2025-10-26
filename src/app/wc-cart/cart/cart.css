@@ -108,7 +108,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   white-space: normal;
-  line-height: 1;
+  line-height: 1rem;
   min-height: 8.1rem;
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
@@ -161,12 +161,12 @@
   height: 9rem;
   align-items: center;
   flex-direction: column;
-  gap: 15px;
+  gap: 1.5rem;
 }
 
 
 .price {
-  padding: 15px 0 0 0;
+  padding: 1.5rem 0 0 0;
   font-size: 1rem;
 }
 
@@ -257,7 +257,7 @@
   .all-b-icon {
     /*justify-content: space-between;*/
     justify-content: flex-end;
-    gap: 20px;
+    gap: 2rem;
   }
 
   .pd {
@@ -280,11 +280,11 @@
 @media (min-width: 36em) {
 
   .base-price {
-    font-size: 25px;
+    font-size: 2.5rem;
   }
 
   .price {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 
 
@@ -316,16 +316,16 @@
 @media (min-width: 48em) {
 
   .b-goods {
-    max-width: 218px;
+    max-width: 21.8rem;
   }
 
   .plus {
-    width: 40px;
-    margin: 0 0 0 10px;
+    width: 4rem;
+    margin: 0 0 0 1rem;
   }
 
   .minus {
-    width: 40px;
+    width: 4rem;
   }
 
   .b-description {
@@ -334,7 +334,7 @@
   }
 
   .all-b-icon {
-    width: 150px;
+    width: 15rem;
   }
 
   .desktop {
@@ -358,7 +358,7 @@
 @media (min-width: 62em) {
 
   .goods-cart {
-    max-width: 752px;
+    max-width: 76.7rem;
   }
 
 

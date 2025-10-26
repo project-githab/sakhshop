@@ -246,13 +246,25 @@
   }
 
   .qty {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
 
 /* ≥302px */
 @media (min-width: 18.875em) {
+
+  .all-b-icon {
+    /*justify-content: space-between;*/
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+  .pd {
+    flex-direction: row;
+    /*height: 9rem;*/
+    height: 5rem;
+  }
 
   .cart {
     margin: 0 2rem 2rem 2rem;
@@ -266,6 +278,16 @@
 
 /* ≥576px */
 @media (min-width: 36em) {
+
+  .base-price {
+    font-size: 25px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+
   .orientation {
     display: flex;
     flex-direction: row;

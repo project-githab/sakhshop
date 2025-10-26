@@ -75,7 +75,7 @@
   overflow: hidden;
   align-items: center;
   justify-content: center;
-  background-color: bisque;
+  background-color: hotpink;
   /*background-color: #2a63a5;*/
 }
 
@@ -290,8 +290,8 @@
 
   .orientation {
     display: flex;
-    flex-direction: row;
-    align-items: stretch;
+    /*flex-direction: row;*/
+    /*align-items: stretch;*/
   }
 
   .b-goods {
@@ -306,7 +306,7 @@
 
 
   .text3 {
-    -webkit-line-clamp: 6;
+    -webkit-line-clamp: 4;
   }
 
 
@@ -351,6 +351,16 @@
     height: 0;
     flex-direction: row;
   }
+
+}
+
+/* ≥992px */
+@media (min-width: 62em) {
+
+  .goods-cart {
+    max-width: 752px;
+  }
+
 
 }
 

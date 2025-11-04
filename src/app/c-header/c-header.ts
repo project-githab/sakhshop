@@ -1,7 +1,7 @@
-import {Component, DoCheck, OnInit} from '@angular/core';
+import {Component, DoCheck, inject, OnInit} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {NgOptimizedImage, NgStyle} from '@angular/common';
-import {Router} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {Common} from '../_shared/common';
 import {CSideBar} from '../c-side-bar/c-side-bar';
 import {Burger} from '../_directives/side-bar/burger';
@@ -19,6 +19,10 @@ import {Burger} from '../_directives/side-bar/burger';
   styleUrl: './c-header.css',
 })
 export class CHeader implements OnInit, DoCheck {
+
+
+  private route = inject(ActivatedRoute);
+  private router = inject(Router);
 
 
   /**
@@ -42,31 +46,66 @@ export class CHeader implements OnInit, DoCheck {
   valueInput: string = "";
 
 
-  bgColorHome: boolean = false;
-  isActiveList: boolean = false;
+  isActiveButtonHome: boolean = false;
+  isActiveButtonList: boolean = false;
+  isActiveButtonCart: boolean = false;
 
-  constructor(private router: Router, private common: Common) {
+  constructor(private common: Common) {
   }
 
   ngOnInit(): void {
 
     this.router.url;
     if (this.router.url === "/") {
-      this.bgColorHome = true;
+      this.isActiveButtonHome = true;
     }
+    if (this.router.url === "/cart") {
+      this.isActiveButtonCart = true;
+    }
+
 
   }
 
-  isList() {
-    this.bgColorHome = !this.bgColorHome;
-    this.isActiveList = !this.isActiveList;
+  openListCategories() {
+
+    this.isActiveButtonList = !this.isActiveButtonList;
+
+    if (this.router.url === "/") {
+      this.isActiveButtonHome = !this.isActiveButtonHome;
+    }
+
+    if (this.router.url === "/cart") {
+      this.isActiveButtonCart = !this.isActiveButtonCart;
+    }
+
+    /*Закрываем или открываем список категорий. Туда-сюда*/
     this.common.toggleSidebarM("l")
   }
 
-  backHome() {
-    this.bgColorHome = true;
-    this.isActiveList = false;
+  goHome() {
+    this.isActiveButtonHome = true;
+    this.isActiveButtonList = false;
+
+    /*Закрываем список категорий в мобильной версии*/
     this.common.toggleSidebarM("h")
+
+    this.router.navigate(['/']).then(() => {});
+  }
+
+  goCart() {
+
+    this.isActiveButtonCart = true;
+    this.isActiveButtonList = false;
+
+    /*Закрываем список категорий в мобильной версии*/
+    this.common.toggleSidebarM("h")
+
+    /*Если нахожусь на странице /cart то, не инициализируем кнопку перехода на эту-же страницу, а то получается "cart/cart" */
+    if (this.router.url !== "/cart") {
+      this.router.navigate(['cart']).then(() => {});
+    }
+
+
   }
 
   /**
@@ -86,6 +125,9 @@ export class CHeader implements OnInit, DoCheck {
   toggleSidebar() {
     this.common.toggleSidebar()
   }
+
+
+
 
 
   /**

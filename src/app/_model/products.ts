@@ -3,15 +3,15 @@ export interface Products {
   name: number
   description: string
   brand: string
-  urlImg1:string
-  urlImg2:string
-  urlImg3:string
-  urlImg4:string
-  urlImg5:string
-  urlImg6:string
-  urlImg7:string
-  urlImg8:string
-  urlImg9:string
+  url_img1:string
+  url_img2:string
+  url_img3:string
+  url_img4:string
+  url_img5:string
+  url_img6:string
+  url_img7:string
+  url_img8:string
+  url_img9:string
   keyword1:string
   keyword2:string
   keyword3:string
@@ -22,6 +22,7 @@ export interface Products {
   bullet3:string
   bullet4:string
   bullet5:string
-  dateCreatedProduct:Date
+  date_created_product:Date
   enabled:boolean
+  rating:number
 }

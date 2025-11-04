@@ -33,14 +33,19 @@ export class CSideBar implements OnInit, OnDestroy {
   isOpen = false;
   isOpenM = false;
 
+  /*Закрываем или открываем список категорий в desktop версии. Туда-сюда*/
   toggleSidebar() {
     this.isOpen = !this.isOpen;
   }
+
   toggleSidebarM(value :string) {
+
+    /*Закрываем или открываем список категорий. Туда-сюда*/
     if (value === "l") {
       this.isOpenM = !this.isOpenM;
     }
 
+    /*Закрываем список категорий в мобильной версии*/
     if (value === "h") {
       this.isOpenM = false;
     }

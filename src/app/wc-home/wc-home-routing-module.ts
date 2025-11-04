@@ -6,6 +6,7 @@ import {Home} from './home/home';
 const routes: Routes = [
   { path: '', component: WcHome, children: [
     { path: '', component: Home }
+    // { path: '', component: Home, data: {reuse: true} }
     ] }
 ];
 

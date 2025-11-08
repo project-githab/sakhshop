@@ -40,8 +40,11 @@ export class Home implements OnInit {
       this.apiClient.getProducts(this.sessionCookies).subscribe({
         next: data => {
           this.products = data.products;
-          // this.cdr.detectChanges();
+          this.cdr.detectChanges();
           this.isProduct = true; // fixme todo Вернуть в true !!!!!!!!!!!!!!!! Это loading
+        },
+        error: err => {
+          console.log(err);
         }
       });
     // }

@@ -10,7 +10,7 @@ export const environment = {
   /**
    * Название домена/Сайта
    */
-  domain: 'localhost',
+  domain: '192.168.1.60',
 
 
   /**

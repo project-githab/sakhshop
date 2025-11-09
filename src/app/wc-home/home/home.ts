@@ -11,7 +11,7 @@ import {isPlatformBrowser, isPlatformServer} from '@angular/common';
 })
 export class Home implements OnInit {
 
-  isProduct = true; // fixme todo Вернуть в false !!!!!!!!!!!!!!!! Это loading
+  isProduct = false;
 
   // Ту храним cookies и другие данный из заголовка запроса к приложению
   request: Request | null = inject(REQUEST);
@@ -34,14 +34,14 @@ export class Home implements OnInit {
 
   ngOnInit(): void {
 
-    // FIXME когда я перехожу например в корзину а потом обратно, то APP пытается сделать повторно запрос к серверу
+    // TODO реализовать повторное использование модуля, чтобы не уничтожался
 
     // if (isPlatformServer(this.platformId)) {
       this.apiClient.getProducts(this.sessionCookies).subscribe({
         next: data => {
           this.products = data.products;
+          this.isProduct = true;
           this.cdr.detectChanges();
-          this.isProduct = true; // fixme todo Вернуть в true !!!!!!!!!!!!!!!! Это loading
         },
         error: err => {
           console.log(err);
@@ -49,19 +49,6 @@ export class Home implements OnInit {
       });
     // }
 
-
-    // Делаем http запрос
-    // this.apiClient.getProducts(this.sessionCookies).subscribe({
-    //   next: data => {
-    //     this.products = data.products;
-    //
-    //
-    //     this.cdr.detectChanges();
-    //
-    //     this.isProduct = true;
-    //
-    //   }
-    // });
 
 
   }

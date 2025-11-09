@@ -1,6 +1,5 @@
 
 .head {
-  /*background-color: #379678;*/
   display: flex;
   padding: 2.5rem 0.5rem 2.5rem 0.5rem;
   gap: 2rem;
@@ -8,7 +7,6 @@
 }
 
 .name {
-  /*background-color: #2a63a5;*/
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,12 +43,9 @@
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
-  /*background-color: brown;*/
 }
 
 .cart {
-
-  /*background-color: #ff9b00;*/
 
   display: flex;
   flex-direction: column;
@@ -76,8 +71,7 @@
   overflow: hidden;
   align-items: center;
   justify-content: center;
-  /*background-color: hotpink;*/
-  /*background-color: #2a63a5;*/
+  background-color: var(--color-1);
 }
 
 .b-goods img {
@@ -95,12 +89,6 @@
 
 .d-check {
   display: flex;
-}
-
-.f-check {
-  /*float: right;*/
-  /*height: 100%;*/
-  /*margin: 0 1.5rem 0 1.5rem;*/
 }
 
 
@@ -190,7 +178,6 @@
 .pd {
   display: flex;
   padding: 0 0 0 0.5rem;
-  /*background-color: #fdf7e3;*/
   height: 9rem;
   align-items: center;
   flex-direction: column;
@@ -236,8 +223,6 @@
 
 .b-icon {
   display: flex;
-  /*background-color: var(--color-11);*/
-  /*background-color: aqua;*/
   height: 100%;
   align-items: center;
   padding: 0 0.5rem 0 0.5rem;
@@ -246,9 +231,6 @@
 /* ≥270px */
 @media (min-width: 16.875em) {
 
-  /*.b-icon {*/
-  /*  padding: 0 1rem 0 1rem;*/
-  /*}*/
   .name {
     font-size: 1.6rem;
   }
@@ -299,18 +281,6 @@
   .name {
     font-size: 1.8rem;
   }
-
-  /*.all-b-icon {
-    !*justify-content: space-between;*!
-    justify-content: flex-end;
-    gap: 2rem;
-  }
-
-  .pd {
-    flex-direction: row;
-    !*height: 9rem;*!
-    height: 5rem;
-  }*/
   .cart {
     margin: 0 2rem 2rem 2rem;
   }
@@ -325,14 +295,12 @@
 @media (min-width: 27.438em) {
 
   .all-b-icon {
-    /*justify-content: space-between;*/
     justify-content: flex-end;
     gap: 2rem;
   }
 
   .pd {
     flex-direction: row;
-    /*height: 9rem;*/
     height: 5rem;
   }
 
@@ -358,8 +326,6 @@
 
   .orientation {
     display: flex;
-    /*flex-direction: row;*/
-    /*align-items: stretch;*/
   }
 
   .b-goods {

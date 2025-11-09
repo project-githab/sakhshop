@@ -44,8 +44,13 @@
   --color-10: #737373;
   --color-11: #f7f7f7;
   --color-12: #e2e2e2;
-  --color-13: #e7e7e730;;
+  --color-13: #e7e7e730;
   --color-14: #ff4b00;
+  --color-15: #cdcdcd;
+  --color-16: #d9d9d9;
+  --color-17: #ff9b00;
+  --color-18: #f1f1f1;
+  --color-19: #E7E7E7;
 
 
   --shadow-1: 0 0 0.8rem 0 rgb(96 125 139 / 56%);
@@ -56,7 +61,7 @@
 
   --rotateZ: rotateZ(45deg);
 
-  --border-1: 0.11rem solid #CDCDCD;
+  --border-1: 0.11rem solid var(--color-15);
 }
 
 html {
@@ -232,30 +237,30 @@ h1 {
   width: 2rem;
   height: 2rem;
   border-radius: 0.6rem;
-  border: 0.1rem solid #ff9b00;
+  border: 0.1rem solid var(--color-17);
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   outline: none;
-  background-color: #f1f1f1;
+  background-color: var(--color-18);
 
   /* ОБЪЕДИНЕННЫЙ TRANSITION: Включаем все свойства */
   transition: background-color 0.3s ease-in-out, /* Для :hover */ border-color 0.3s ease-in-out, /* Для .checkbox-checked */ transform 0.3s ease-in-out, /* Для :focus (если transform используется) */ box-shadow 0.3s ease-in-out; /* Для :focus */
 }
 
 .checkbox:hover {
-  background-color: #E7E7E7;
+  background-color: var(--color-19);
 }
 
 .checkbox-checked {
-  background-color: #FFDC26;
-  border-color: #FFDC26; /* Теперь будет плавно меняться */
+  background-color: var(--color-5);
+  border-color: var(--color-5); /* Теперь будет плавно меняться */
 }
 
 .checkbox-checked:hover {
-  background-color: #FFDC26;
-  border-color: #FFDC26;
+  background-color: var(--color-5);
+  border-color: var(--color-5);
 }
 
 /*checkbox*/

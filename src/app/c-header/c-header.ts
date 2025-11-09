@@ -101,9 +101,9 @@ export class CHeader implements OnInit, DoCheck {
     this.common.toggleSidebarM("h")
 
     /*Если нахожусь на странице /cart то, не инициализируем кнопку перехода на эту-же страницу, а то получается "cart/cart" */
-    if (this.router.url !== "/cart") {
+    // if (this.router.url !== "/cart") {
       this.router.navigate(['cart']).then(() => {});
-    }
+    // }
 
 
   }

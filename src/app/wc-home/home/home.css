@@ -26,7 +26,7 @@
 .b-img-p {
   width: 100%;
   aspect-ratio: 4 / 3;
-  background-color: rgb(247, 247, 247);
+  background-color: var(--color-rgb-1);
   border-radius: 1rem 1rem 0 0;
   overflow: hidden;
   display: flex;
@@ -60,7 +60,7 @@
 }
 
 .rating-star {
-  fill: #DE7921;
+  fill: var(--color-20);
   width: 1.6rem;
   height: 1.6rem;
 }

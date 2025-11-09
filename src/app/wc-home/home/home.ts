@@ -11,7 +11,7 @@ import {isPlatformBrowser, isPlatformServer} from '@angular/common';
 })
 export class Home implements OnInit {
 
-  isProduct = false;
+  isProduct = false; // fixme Вернуть в false !!!!!!!!!!!!!!!! Это loading
 
   // Ту храним cookies и другие данный из заголовка запроса к приложению
   request: Request | null = inject(REQUEST);
@@ -40,7 +40,7 @@ export class Home implements OnInit {
       this.apiClient.getProducts(this.sessionCookies).subscribe({
         next: data => {
           this.products = data.products;
-          this.isProduct = true;
+          this.isProduct = true; // fixme Вернуть в true !!!!!!!!!!!!!!!! Это loading
           this.cdr.detectChanges();
         },
         error: err => {
